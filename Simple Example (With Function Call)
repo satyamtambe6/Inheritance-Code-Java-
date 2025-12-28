@@ -1,0 +1,26 @@
+// Parent class
+class DataStructure {
+    void showType() {
+        System.out.println("This is a Data Structure");
+    }
+}
+
+// Child class
+class Stack extends DataStructure {
+    void showOperation() {
+        System.out.println("Stack follows LIFO principle");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+
+        // Object of child class
+        Stack stack = new Stack();
+
+        // Function calls
+        stack.showType();       // Parent class function
+        stack.showOperation();  // Child class function
+    }
+}
